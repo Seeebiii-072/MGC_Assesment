@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    color: #222;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border: 1px solid #ddd;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+h3 {
+    margin-top: 25px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.tab-button {
+    padding: 10px 18px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+}
+
+.tab-button.active {
+    background: #222;
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+}
+
+.primary {
+    background: #222;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    margin-top: 5px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.checkboxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.checkboxes label {
+    font-weight: normal;
+}
+
+.checkboxes input {
+    width: auto;
+    margin-right: 8px;
+}
+
+.result,
+.score-result {
+    margin-top: 25px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+}
+
+.score-result {
+    text-align: center;
+}
+
+.score-label {
+    font-size: 18px;
+}
+
+.score-percent {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.model-info {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.examples {
+    margin-top: 30px;
+}
+
+.examples li {
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.loading {
+    margin-top: 15px;
+}
+
+.error {
+    margin-top: 15px;
+    padding: 12px;
+    background: #ffe5e5;
+    border: 1px solid #ffaaaa;
+}
+
+.hidden {
+    display: none;
+}
+
+pre {
+    white-space: pre-wrap;
+}

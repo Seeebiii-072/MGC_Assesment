@@ -1,0 +1,10 @@
+streamlit
+sentence-transformers
+chromadb
+openai
+python-dotenv
+pandas
+scikit-learn
+joblib
+catboost
+xgboost

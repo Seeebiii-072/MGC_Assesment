@@ -1,0 +1,26 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.cache/
+
+# Generated app/data artifacts
+chroma_db/
+
+# Local secrets
+.env
+.env.local
+
+# JavaScript leftovers from the old standalone web app
+node_modules/
+.next/
+out/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+mgc_part1.rar
+mgc_part1.rar

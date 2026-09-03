@@ -1,0 +1,78 @@
+{
+  "model": "logistic_regression",
+  "selection_rule": "highest_average_precision_on_chronological_validation",
+  "rows_after_deduplication": 9000,
+  "duplicates_removed": 160,
+  "initial_train_rows": 5850,
+  "validation_rows": 1350,
+  "final_fit_rows": 7200,
+  "test_rows": 1800,
+  "initial_train_conversion_rate": 0.06752136752136752,
+  "validation_conversion_rate": 0.06518518518518518,
+  "final_fit_conversion_rate": 0.06708333333333333,
+  "test_conversion_rate": 0.07944444444444444,
+  "selection_metric_name": "validation_average_precision",
+  "selected_validation_metric": 0.13344169282158144,
+  "metric_name": "average_precision",
+  "metric_value": 0.20834163505270975,
+  "validation_start": "2025-02-20T03:51:36",
+  "test_start": "2025-05-28T01:39:02",
+  "model_comparison": [
+    {
+      "model": "logistic_regression",
+      "metric_name": "validation_average_precision",
+      "metric_value": 0.13344169282158144
+    },
+    {
+      "model": "gradient_boosting",
+      "metric_name": "validation_average_precision",
+      "metric_value": 0.1264704757357615
+    },
+    {
+      "model": "xgboost",
+      "metric_name": "validation_average_precision",
+      "metric_value": 0.12211591369413456
+    },
+    {
+      "model": "catboost",
+      "metric_name": "validation_average_precision",
+      "metric_value": 0.11295186083564601
+    }
+  ],
+  "model_input_columns": [
+    "source",
+    "city",
+    "area",
+    "property_type",
+    "budget_pkr_lac",
+    "bedrooms_cat",
+    "is_overseas",
+    "referred_by_existing_client",
+    "has_financing_approved",
+    "purchase_timeframe",
+    "budget_inventory_match",
+    "payment_method",
+    "purpose",
+    "selected_project_or_unit_type",
+    "preferred_location_match",
+    "contact_verified",
+    "has_prior_mgc_relationship",
+    "initial_intent_level",
+    "previous_inquiry_count",
+    "created_month",
+    "created_dow",
+    "created_hour"
+  ],
+  "unavailable_intake_columns": [
+    "budget_inventory_match",
+    "contact_verified",
+    "has_prior_mgc_relationship",
+    "initial_intent_level",
+    "payment_method",
+    "preferred_location_match",
+    "previous_inquiry_count",
+    "purchase_timeframe",
+    "purpose",
+    "selected_project_or_unit_type"
+  ]
+}

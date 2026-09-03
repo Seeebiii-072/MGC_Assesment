@@ -1,0 +1,1 @@
+"""MGC lead scoring baseline."""
