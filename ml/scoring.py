@@ -57,5 +57,5 @@ def score_lead(payload: dict[str, Any]) -> dict[str, Any]:
         "model": str(metadata.get("model", "unknown")),
         "metric_name": metadata.get("metric_name"),
         "metric_value": metadata.get("metric_value"),
-        "note": "Use this estimate to prioritize sales follow-up.",
+        "note": "This score can help prioritize sales follow-up.",
     }
